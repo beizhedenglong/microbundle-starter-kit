@@ -1,0 +1,22 @@
+{
+  "name": "microbundle-starter-kit",
+  "version": "0.1.0",
+  "main": "dist/microbundle-starter-kit.js",
+  "umd:main": "dist/microbundle-starter-kit.js",
+  "module": "dist/microbundle-starter-kit.mjs",
+  "source": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle -o dist/ --sourcemap false --compress false",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "microbundle": "^0.6.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  },
+  "peerDependencies": {
+    "react": "^16.4.0"
+  }
+}
