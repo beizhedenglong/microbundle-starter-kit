@@ -2,3 +2,7 @@ node_modules
 .cache
 dist
 package-lock.json
+exampleDist
+yarn-error.log
+.vscode
+coverage
