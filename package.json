@@ -8,8 +8,9 @@
   "license": "MIT",
   "scripts": {
     "build": "microbundle -o dist/ --sourcemap false --compress false",
-    "dev": "microbundle watch",
-    "test": "jest"
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false",
+    "test": "jest --coverage --config=jest.config.js",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
